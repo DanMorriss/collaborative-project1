@@ -51,13 +51,32 @@ body {
     margin-bottom: 15px;
 }
 
-/* Section one */
+/* color gradients */
 
 
 #gradient1 {
     height: 150px;
     width: 250px;
+    background-image: linear-gradient(blue, green);
+}
+
+#gradient2 {
+    height: 150px;
+    width: 250px;
     background-image: linear-gradient(to top right, blue, green);
+}
+
+#gradient3 {
+    height: 150px;
+    width: 250px;
+    background-image: linear-gradient(to top right,black, blue, green, white);
+}
+
+.gradient-code {
+    background-color: rgb(168, 155, 155);
+    padding: 1px;
+    border-radius: 5px;
+    
 }
 
 /* Media queries */
