@@ -51,6 +51,14 @@ body {
     margin-bottom: 15px;
 }
 
+/* Section one */
+
+#gradient {
+    height: 150px;
+    width: 250px;
+    background-image: linear-gradient(to top right, blue, green);
+}
+
 /* Media queries */
 
 @media screen and (max-width: 980px) {
