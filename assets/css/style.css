@@ -74,3 +74,49 @@ body {
         height: 120px;
     }
 }
+
+/* Styling for annimation section */
+/* All annimation styling below to be further edited. Currently nothing happens. Basic structure only coded. */
+
+#rocket {
+    position: relative;
+    animation-name: rocket-zoom;
+    animation: 1s;
+}
+@keyframes rocket-zoom {
+    from {
+        left: 0;
+    }
+    to {
+        left: 20px;
+    }
+}
+
+#balloon {
+    position: relative;
+    animation-name: balloon-fly;
+    animation: 5s;
+}
+@keyframes ballon-fly {
+    from {
+        bottom: 0;
+    }
+    to {
+        top: 20px;
+    }
+}
+
+#treasure-cover {
+    animation-name: reveal;
+    animation: 3s;
+}
+@keyframes reveal {
+    from {
+        
+    }
+    to {
+        
+    }
+}
+
+
