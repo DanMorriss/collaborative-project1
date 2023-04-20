@@ -123,14 +123,20 @@ body {
     font-size: 4rem;
     position: relative;
     animation-name: rocket-zoom;
-    animation: 1s;
+    animation-direction: normal;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+#rocket:active {
+    animation-play-state: running;
 }
 @keyframes rocket-zoom {
     from {
         left: 0;
     }
     to {
-        left: 20px;
+        left: 92%;
     }
 }
 
@@ -184,7 +190,8 @@ animation-name: reveal;
     float: right;
     padding-right: 10px;
     animation-name: balloon-fly;
-    animation: 5s;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
 }
 @keyframes ballon-fly {
     from {
