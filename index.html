@@ -35,20 +35,21 @@
             </p>
         </section>
 
+        <!-- gradients section -->
         <section id="gradients">
            <h2>Color Gradients</h2>
            <p>Color gradients are a great way to turn make div's background color more interessting.
             They act as a background image applied using CSS and they look like this.
            </p>
-           <div id="gradient1"></div>
+           <div id="gradient1" class="gradient-box"></div>
            <a>In this example the color goes from blue to green, from the top to the bottom. The CSS code for this example is appplied to a div with  <code>height: 150px;</code> and  <code>width; 250px;</code> and looks like this.</a>
            <code class="gradient-code">background-image: linear-gradient(blue, green);</code>
            <p>We can do a couple of other things, like change the direction of of gradient by adding in <code class="gradient-code">to top right, </code></p>
            <code class="gradient-code">background-image: linear-gradient(to top right, blue, green);</code>
-           <div id="gradient2"></div>
+           <div id="gradient2" class="gradient-box"></div>
            <p>We don't need to stick with just two colors, we can add as many as we want, just seperate them with a comma.</p>
            <code class="gradient-code">background-image: linear-gradient(to top right,black, blue, green, white);</code>
-           <div id="gradient3"></div>
+           <div id="gradient3" class="gradient-box"></div>
            <p>You can use hex or rgb color names too, and specify the direction with degrees:<code class="gradient-code">45deg</code>.</p>
            <p>These next two lines of code will give the same result.</p>
            <code class="gradient-code">background-image: linear-gradient(45deg, #1203f9, #007c0d);</code>
@@ -62,6 +63,7 @@
            Section Three
         </section>
 
+        <!-- animation section -->
         <section id="annimation">
         <div>
            <h2>Creating annimation using CSS</h2>
@@ -118,7 +120,7 @@
     <footer>
        
         <!-- The code to make the social media links was taken from the CI Love Running Project. -->
-        <ul>
+        <ul id="social-icons">
             <li><a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
             </li>
             <li><a href="https://www.twitter.com" target="_blank" rel="noopener"><i
