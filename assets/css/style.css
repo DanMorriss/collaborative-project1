@@ -6,9 +6,10 @@
 
 body {
     padding: 0;
-    margin: 0;
+    margin: 20px;
     font-family: 'Courier Prime', mono;
     font-size: 1.3rem;
+    background-color: antiquewhite;
 }
 
 /* Navigation */
@@ -53,7 +54,6 @@ body {
 
 /* color gradients */
 
-
 #gradient1 {
     height: 150px;
     width: 250px;
@@ -76,7 +76,20 @@ body {
     background-color: rgb(168, 155, 155);
     padding: 1px;
     border-radius: 5px;
-    
+}
+
+.gradient-box {
+    margin: auto;
+}
+
+#social-icons li {
+    list-style-type: none;
+    display: inline;
+}
+
+#social-icons {
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Media queries */
