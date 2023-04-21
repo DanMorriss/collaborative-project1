@@ -60,34 +60,52 @@
         </section>
 
         <section id="annimation">
-
+        <div>
            <h2>Creating annimation using CSS</h2>
-           <p>Annimation using CSS can be activated on:</p>
-           <ul>
-            <li>page loading</li>
-            <li>element hover</li>
-            <li>element click</li>
-            <li>... and more</li>
-           </ul>
-           <p>Annimation using CSS can:</p>
-           <ul>
-            <li>change from one style or set of styles to another</li>
-            <li>change as fast or slow as you dictate</li>
-            <li>Have a one step or multiple step change</li>
-           </ul>
-           <p><strong>Try clicking or hovering over the icons and elements below to see what happens.</strong></p>
+            <p>The CSS animation properties and their values provide endless opportunities. </p>
+            <p>You can:</p>
+            <ul>
+                <li>Target any HTML element</li>
+                <li>Change the value of any property for the targetted element</li>
+                <li>Control how the annimation runs: speed, repetition, direction, timing</li>
+                <li>Have your annimation complete one or multiple changes</li>
+            </ul>
+            <p>Creating animation purely in HTML and CSS does have one big limitation however. 
+                There is only an option to run (although running can be delayed) or pause an annimation. 
+                This can then only really be controlled by using pseudo-selectors such as :hover 
+                (there may be other ways that I haven't discovered). But, add a little java script and
+                the opportunities will increase five-fold.</p>
+            <p>Things still to be explored:</p>
+            <ul>
+                <li>Can multiple elements be targeted with the same animation?</li>
+                <li>How well does it work to change multiple properties at the same time?</li>
+                <li>Using the cubic-bezier values for the annimation-timing-function.</li>
+                <li>Using the animation shorthand.</li>
+                <li>And or course ... adding in some javascript!</li>
+            </ul>
+            <p>The following demonstration has been created purely using HTML and CSS. The balloon is 
+                constantly 'running'. The rocket annimation is set to 'pause' and will only run when 
+                clicked AND the click held. The treasure island is also set to 'pause' and will run 
+                when hovered over.</p>
+        </div>
 
-            <div>
+            <div id="annimation-container">
+
                 <div id="rocket-container">
                     <i id="rocket" class="fa-solid fa-shuttle-space"></i>
                 </div>
+
                 <div id="treasure-container">
-                    <div><i class="fa-regular fa-gem"></i></div>
-                    <div id="treasure-cover"><p>X marks the spot</p></div>
+                    <img id="treasure" src="assets/images/treasure-chest.webp" alt="Treasure chest filled with lots of glittering booty">
+                    <div id="treasure-island">
+                        <div id="x-spot">X</div>
+                    </div>
                 </div>
-                <div id="ballon-container">
+
+                <div>
                     <i id="balloon" class="fa-brands fa-fly"></i>
                 </div>
+
             </div>
         </section>
         

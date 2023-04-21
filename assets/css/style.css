@@ -96,47 +96,124 @@ body {
 }
 
 /* Styling for annimation section */
-/* All annimation styling below to be further edited. Currently nothing happens. Basic structure only coded. */
 
+#annimation {
+    margin-left: 20px;
+}
+
+#annimation h2 {
+    text-align: center;
+}
+
+#annimation-container {
+    height: 620px;
+    background-image: url(../images/sea.jpeg);
+    background-size: cover;
+}
+
+/* Rocket */
+
+#rocket-container {
+    width: 100%;
+    height: 100px;
+}
 #rocket {
+    padding-top: 10px;
+    font-size: 4rem;
     position: relative;
     animation-name: rocket-zoom;
-    animation: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: paused;
+}
+#rocket:active {
+    animation-play-state: running;
 }
 @keyframes rocket-zoom {
     from {
         left: 0;
     }
     to {
-        left: 20px;
+        left: 92%;
     }
 }
 
-#balloon {
+/* Treasure Island */
+
+#treasure {
+    height: 150px;
+    width: 120px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+#treasure-island {
+    width: 250px;
+    height: 180px;
+    background: url(../images/sand.jpeg);
+    border: solid #b68253 2px;
+    border-radius: 200px 100px 150px 50px;
+    margin-left: 130px;
     position: relative;
-    animation-name: balloon-fly;
-    animation: 5s;
+    bottom: 180px;
+    opacity: 1;
 }
-@keyframes ballon-fly {
-    from {
-        bottom: 0;
-    }
-    to {
-        top: 20px;
-    }
-}
-
-#treasure-cover {
+#treasure-island:hover {
     animation-name: reveal;
-    animation: 3s;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+#x-spot {
+    margin: 0 auto;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 4rem;
 }
 @keyframes reveal {
-    from {
-        
+    from { 
+        opacity: 1;
     }
-    to {
-        
+    to { 
+        opacity: 0; 
     }
 }
 
+/* Balloon */
 
+#balloon {
+    font-size: 10rem;
+    position: relative;
+    bottom: 100px;
+    right: 0;
+    float: right;
+    padding-right: 10px;
+/* animation specific code */
+    animation-name: balloon-fly;
+    animation-direction: alternate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes balloon-fly {
+    0% {
+        bottom: 100px;
+        right: 0px;
+    }
+    25% {
+        bottom: 200px;
+        right: 50px;
+    }
+    50% {
+        bottom: 300px;
+        right: 0px;
+    }
+    75% {
+        bottom: 400px;
+        right: 50px;    }
+    100% {
+        bottom: 500px;
+        right: 0px;
+    }
+}
