@@ -110,13 +110,15 @@ body {
 }
 #annimation-container {
     height: 620px;
-    background-color: blue;
+    background-image: url(../images/sea.jpeg);
+    background-size: cover;
 }
+
 /* Rocket */
+
 #rocket-container {
     width: 100%;
     height: 100px;
-    background-color: blue;
 }
 #rocket {
     padding-top: 10px;
@@ -141,8 +143,6 @@ body {
     }
 }
 
-
-
 /* Treasure Island */
 
 #treasure {
@@ -153,30 +153,32 @@ body {
 #treasure-island {
     width: 250px;
     height: 180px;
-    background-color: sandybrown;
-    border: solid black 2px;
+    background: url(../images/sand.jpeg);
+    border: solid #b68253 2px;
     border-radius: 200px 100px 150px 50px;
     margin-left: 80px;
     position: relative;
     bottom: 180px;
+    opacity: 1;
+}
+#treasure-island:hover {
+    animation-name: reveal;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
 }
 #x-spot {
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 60px;
     text-align: center;
+    font-size: 4rem;
 }
-#x-spot strong {
-font-size: 2rem;
-}
-animation-name: reveal;
-    animation: 3s;
-
 @keyframes reveal {
-    from {
-        
+    from { 
+        opacity: 1;
     }
-    to {
-        
+    to { 
+        opacity: 0; 
     }
 }
 
