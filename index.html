@@ -34,19 +34,21 @@
 
         <section id="gradients">
            <h2>Color Gradients</h2>
-           <h3>Dan Morriss</h3>
-           <p>I have recently been looking into background gradients. 
-            These act as a background image applied using CSS and they look like this.
+           <p>Color gradients are a great way to turn make div's background color more interessting.
+            They act as a background image applied using CSS and they look like this.
            </p>
            <div id="gradient1"></div>
-           <a>In this example the color goes from blue to green, from the top to the bottom. the CSS code for this looks like this.</a>
+           <a>In this example the color goes from blue to green, from the top to the bottom. The CSS code for this example is appplied to a div with  <code>height: 150px;</code> and  <code>width; 250px;</code> and looks like this.</a>
            <code class="gradient-code">background-image: linear-gradient(blue, green);</code>
-           <p>We can do a few more interesting things, like change the direction of of gradient by adding in <code>to top right, </code></p>
+           <p>We can do a couple of other things, like change the direction of of gradient by adding in <code class="gradient-code">to top right, </code></p>
            <code class="gradient-code">background-image: linear-gradient(to top right, blue, green);</code>
            <div id="gradient2"></div>
-           <p>We don't need to stick with one color, we can add as many as we want, just seperate them with a comma.</p>
+           <p>We don't need to stick with just two colors, we can add as many as we want, just seperate them with a comma.</p>
            <code class="gradient-code">background-image: linear-gradient(to top right,black, blue, green, white);</code>
            <div id="gradient3"></div>
+           <p>You can use hex or rgb color names too, and specify the direction with degrees:<code class="gradient-code">45deg</code>.</p>
+           <p>These next two lines of code will give the same result.</p>
+           <code class="gradient-code">background-image: linear-gradient(45deg, #1203f9, #007c0d);</code>
         </section>
 
         <section>
