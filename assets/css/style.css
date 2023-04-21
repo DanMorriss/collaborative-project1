@@ -1,55 +1,71 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 /* Structural CSS */
 
-body {
+* {
+    margin: 0;
     padding: 0;
-    margin: 20px;
-    font-family: 'Courier Prime', mono;
+    border: none;
+}
+
+body {
+    font-family: Lato, sans-serif;
     font-size: 1.3rem;
     background-color: antiquewhite;
 }
 
-/* Navigation */
 
-#nav {
-    font-size: 1.5rem;
-    height: 40px;
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 1px;
 }
 
-.nav-list-wrapper {
-    position: relative;
-}
-#nav a:hover {
-    text-decoration: underline;
-}
-
-/* Header */
-#header h1 {
-    font-size: 3rem
-}
-
-#header p {
-    font-size: 1.5rem;
-}
-
-#nav li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#nav a {
+a {
     text-decoration: none;
 }
 
-#nav #logo {
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+.float-left {
+        float: left;
+      }
+
+.float-right {
+        float: right;
+}
+
+/* Header */
+
+header {
+    background: whitesmoke;
+    margin: 0;
+    height: 100px;
+}
+
+#menu {
+    text-align: right;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 35px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Logo */
+
+#logo {
+    font-size: 60px;  
+    margin: 10px;    
+}
+#node {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    right: 20px;
 }
 
 /* color gradients */
@@ -92,21 +108,14 @@ body {
     justify-content: space-around;
 }
 
-/* Media queries */
 
-@media screen and (max-width: 980px) {
 
-    #nav li {
-        clear: both;
-        float:left;
-        text-align: left;
-        display: block;
-    }
 
-    #nav {
-        height: 120px;
-    }
-}
+
+
+
+
+
 
 /* Styling for annimation section */
 
@@ -229,4 +238,12 @@ body {
         bottom: 500px;
         right: 0px;
     }
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+
 }
