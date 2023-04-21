@@ -96,7 +96,6 @@ body {
 }
 
 /* Styling for annimation section */
-/* All annimation styling below to be further edited. Currently nothing happens. Basic structure only coded. */
 
 #annimation {
     margin-left: 20px;
@@ -104,9 +103,6 @@ body {
 
 #annimation h2 {
     text-align: center;
-}
-#annimation-info {
-    
 }
 
 #annimation-container {
@@ -186,9 +182,6 @@ body {
 
 /* Balloon */
 
-#balloon-container {
-   
-}
 #balloon {
     font-size: 10rem;
     position: relative;
@@ -196,7 +189,7 @@ body {
     right: 0;
     float: right;
     padding-right: 10px;
-
+/* animation specific code */
     animation-name: balloon-fly;
     animation-direction: alternate;
     animation-duration: 30s;
