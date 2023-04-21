@@ -108,6 +108,55 @@ body {
     }
 }
 
+/* Styling for flexbox gallery section */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.title{
+    margin-bottom: 2rem;
+}
+
+ol {
+    padding-left: 50px;
+}
+
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img{
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: fill;
+}
+
+img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media(max-width:500px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+}
+
 /* Styling for annimation section */
 
 #annimation {

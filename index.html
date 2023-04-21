@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#top">About</a></li>
                 <li><a href="#gradients">Color Gradients</a></li>
-                <li><a href="">Section Two</a></li>
+                <li><a href="#flex-box">CSS Flexible Box 'Flexbox' layout</a></li>
                 <li><a href="">Section Three</a></li>
                 <li><a href="#annimation">CSS annimation</a></li>
             </ul>
@@ -55,12 +55,76 @@
            <code class="gradient-code">background-image: linear-gradient(45deg, #1203f9, #007c0d);</code>
         </section>
 
-        <section>
-           Section Two
+        <section id="flex-box">
+           <h2>CSS Flexible Box 'Flexbox' layout</h2>
+           <h3>Megan O'Donohoe</h3>
+           <div>
+            <p>
+            I have been looking into how to create a responsive 'Gallery' page for my static website project. 
+            While <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Grid</a> is an excellent option for large-scale layouts, <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a> is your best bet for making smooth and responsive, smaller-scale 'Gallery' pages.
+           </p>
+           <br>
+           <p>An important thing to be aware of, is the more detailed your image is, the longer time it takes to load. You can maintain a lot of the detail while significantly decreasing loading time by using a compressor tool. For the example below I used very small images. For higher resolution images in my project, I will use <a href="https://imagecompressor.com/">Optimizilla</a> as the other website I found <a href="https://tinypng.com/">TinyPNG</a> will only compress images smaller than 5MB free of charge</p> 
+           <br>
+           <p>In addition to the articles from the CSS-Tricks.com website, I also found these two YouTube videos very helpful in creating my Gallery:</p>
+           <ol>
+            <li><a href="https://youtu.be/3TN9J3pCn6k">How To Create a Responsive Image Grid (Masonry Layout) with HTML and CSS - Flexbox</a></li>
+            <li><a href="https://youtu.be/QmZNFnqwu74">Responsive Image Gallery with HTML & CSS (Flexbox)</a></li>
+           </ol>
+           <br>
+           <p>
+            In the Gallery below, three <code class="gradient-code">divs</code> with the class of <code class="gradient-code">column</code> were created withing a parent div with the class <code class="gradient-code">photo-gallery</code>. In CSS, the value of 'flex' enabled the columns to display side-by-side. A <code class="gradient-code">media query</code> of 'flex-direction; column:' once the screen size reaches below 500px gives the Gallery a responsive design.
+           </p>
+            </div>
+
+           <div class="container">
+
+            <h3 class="title">Responsive Photo Gallery</h2>
+            <h5>(Images captured by and used with permission of <a href="https://www.ritawilsonphotography.com/">Rita Wilson Photography</a></h5>
+            <br>
+      
+            <div class="photo-gallery">
+      
+              <div class="column">
+                <div class="photo">
+                  <img src="/assets/images/Northern lights as seen from Dunree County Donegal Ireland derryphotos.com-min.jpg" alt="">
+                </div>
+                <div class="photo">
+                  <img src="/assets/images/Northern Lights over Antrim.jpg" alt="">
+                </div>
+                <div class="photo">
+                  <img src="/assets/images/Aurora Borealis Downings.jpg" alt="">
+                </div>
+              </div>
+      
+              <div class="column">
+                <div class="photo">
+                  <img src="/assets/images/on the 17th April 2015 the Aurora lit up the sky at Dooey on the Atlantic Drive, Downings..jpg" alt="">
+                </div>
+                <div class="photo">
+                  <img src="/assets/images/The Aurora Borealis or Northern Lights from Dooey Beach, Atlantic Drive, Downings, Co. Donegal, Ireland..jpg" alt="">
+                </div>
+                <div class="photo">
+                  <img src="/assets/images/The aurora borealis towering over Doe Castle, Cresslough, Co. Donega.jpg" alt="">
+                </div>
+              </div>
+      
+              <div class="column">
+                <div class="photo">
+                  <img src="/assets/images/The northern lights from Eelburn, Ballyhiernan Beach, Fanad, Co. Donegal..jpg" alt="">
+                </div>
+                <div class="photo">
+                  <img src="/assets/images/The Northern Lights over Mevagh Boat Yard, Downings, Co. Donegal on Mother's Day..jpg" alt="">
+                </div>
+              </div>
+      
+            </div>
+          </div>
+           </p>
         </section>
 
         <section>
-           Section Three
+        <h2>Section Three</h2>
         </section>
 
         <!-- animation section -->
