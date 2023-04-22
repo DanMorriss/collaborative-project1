@@ -1,55 +1,83 @@
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 /* Structural CSS */
 
+* {
+    margin: 0;
+}
+
 body {
-    padding: 0;
-    margin: 20px;
-    font-family: 'Courier Prime', mono;
+    font-family: Lato, sans-serif;
     font-size: 1.3rem;
     background-color: antiquewhite;
 }
 
-/* Navigation */
-
-#nav {
-    font-size: 1.5rem;
-    height: 40px;
+main {
+    margin: 20px;
 }
 
-.nav-list-wrapper {
-    position: relative;
-}
-#nav a:hover {
-    text-decoration: underline;
+section {
+    margin-top: 40px;
 }
 
-/* Header */
-#header h1 {
-    font-size: 3rem
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+    letter-spacing: 1px;
+    margin: 20px;
+    text-align: center;
 }
 
-#header p {
-    font-size: 1.5rem;
+p {
+    line-height: 30px;
+    margin: 10px;
 }
 
-#nav li {
-    float: right;
-    list-style-type: none;
-    margin-right: 30px;
-}
-
-#nav a {
+a {
     text-decoration: none;
 }
 
-#nav #logo {
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 15px;
+.float-left {
+        float: left;
+      }
+
+.float-right {
+        float: right;
+}
+
+/* Header */
+
+header {
+    background: whitesmoke;
+    margin: 0;
+    height: 100px;
+}
+
+#menu {
+    text-align: right;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 35px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+/* Logo */
+
+#logo {
+    font-size: 60px;  
+    margin: 10px;    
+}
+#node {
+    font-size: 30px;
+    position: relative;
+    top: 20px;
+    right: 20px;
 }
 
 /* color gradients */
@@ -92,21 +120,6 @@ body {
     justify-content: space-around;
 }
 
-/* Media queries */
-
-@media screen and (max-width: 980px) {
-
-    #nav li {
-        clear: both;
-        float:left;
-        text-align: left;
-        display: block;
-    }
-
-    #nav {
-        height: 120px;
-    }
-}
 
 /* Styling for flexbox gallery section */
 *{
@@ -171,6 +184,11 @@ img:hover{
     height: 620px;
     background-image: url(../images/sea.jpeg);
     background-size: cover;
+}
+
+.animation-lists li {
+    margin-left: 30px;
+    line-height: 30px;
 }
 
 /* Rocket */
@@ -278,4 +296,12 @@ img:hover{
         bottom: 500px;
         right: 0px;
     }
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+
 }
