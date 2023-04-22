@@ -67,6 +67,23 @@ header {
     text-align: center;
 }
 
+/* media query for header */
+@media screen and (max-width: 850px){
+    #menu li {
+        font-size: 0.5em;
+    }
+
+    #menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav {
+        background-color: whitesmoke;
+    }
+
+}
+
 /* Logo */
 
 #logo {
